@@ -10,6 +10,7 @@ void Record::Zapis(int age, std::string name, std::string phone) {
 
 void Record::Print() {
 	std::cout << "Age: " << this->age << " Name: " << this->name << " Phone: " << this->phone;
+	std::cout << std::endl;
 }
 
 std::string Record::GetName() {

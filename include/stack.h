@@ -12,5 +12,5 @@ public:
     Record Pop();
     Record Peek();
     bool IsEmpty();
-    void Print();
+    void Prints();
 };

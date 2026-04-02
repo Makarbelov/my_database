@@ -19,20 +19,25 @@ bool Stack::IsEmpty() {
 
 Record Stack::Pop() {
 	if (IsEmpty()) {
-		std::cout << "Стек пуст" << std::endl;
+		std::cout << "Stack Pust!" << std::endl;
+		return Record();
 	}
 	size--;
 	return data[size];
 }
 
 Record Stack::Peek() {
+	data[size - 1].Print();
 	return data[size - 1];
 }
 
-void Stack::Print() {
-	if (size > 0) {
-		for (size_f i = 0; i < size; i++) {
-			std::cout << data[i] << std::endl;
+void Stack::Prints() {
+	if (!IsEmpty()) {
+		for (int i = 0; i < size; i++) {
+			data[i].Print();
 		}
+	}
+	else {
+		std::cout << "Stack Pust!" << std::endl;
 	}
 }

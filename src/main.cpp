@@ -16,4 +16,11 @@ int main() {
     stack.Push(chelovek_2);
     stack.Push(chelovek_3);
     stack.Push(chelovek_4);
+    stack.Prints();
+    stack.Pop();
+    stack.Pop();
+    stack.Peek();
+    stack.Pop();
+    stack.Prints();
+    stack.Pop();
 }
