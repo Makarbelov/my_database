@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../include/record.h"
 #include "../include/stack.h"
-
+#include "../include/vector.h"
 int main() {
     Record chelovek_1;
     Record chelovek_2;
@@ -11,16 +11,12 @@ int main() {
     chelovek_2.Zapis(22, "Olga", "8 853 974 23 65");
     chelovek_3.Zapis(15, "Mark", "8 566 032 05 23");
     chelovek_4.Zapis(19, "Semen", "8 023 645 53 73");
-    Stack stack(10);
-    stack.Push(chelovek_1);
-    stack.Push(chelovek_2);
-    stack.Push(chelovek_3);
-    stack.Push(chelovek_4);
-    stack.Prints();
-    stack.Pop();
-    stack.Pop();
-    stack.Peek();
-    stack.Pop();
-    stack.Prints();
-    stack.Pop();
+    Vector vector;
+    vector.push_back(chelovek_1);
+    vector.push_back(chelovek_2);
+    vector.push_back(chelovek_3);
+    vector[2];
+    int i = vector.Size();
+    vector.Print();
+    std::cout << i;
 }
